@@ -1,1 +1,13 @@
+#include "ksplit2.dtsi" // The shared dtsi file is included in the overlay
 
+// Label of the kscan node in the dtsi
+&kscan0 {
+    col-gpios
+        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
+        , <&pro_micro  GPIO_ACTIVE_HIGH>
+        , <&pro_micro  GPIO_ACTIVE_HIGH>
+        , <&pro_micro  GPIO_ACTIVE_HIGH>
+        , <&pro_micro  GPIO_ACTIVE_HIGH>
+        , <&pro_micro  GPIO_ACTIVE_HIGH>
+        ;
+};
