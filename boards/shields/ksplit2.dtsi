@@ -30,3 +30,10 @@
         >;
     };
 };
+
+/ {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+};
