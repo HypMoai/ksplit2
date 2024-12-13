@@ -1,0 +1,11 @@
+file_format: "1"
+id: ksplit2
+name: KSplit2
+type: shield
+url: 
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - ksplit2_left
+  - ksplit2_right
