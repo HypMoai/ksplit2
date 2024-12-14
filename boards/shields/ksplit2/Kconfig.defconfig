@@ -2,7 +2,7 @@
 
 
 
-if KSPLIT_LEFT
+if SHIELD_KSPLIT_LEFT
 
 config ZMK_KEYBOARD_NAME
 	default "ksplit"
