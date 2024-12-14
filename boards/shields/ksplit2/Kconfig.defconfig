@@ -1,21 +1,25 @@
+
+
+
+
 if KSPLIT2_LEFT
 
 config ZMK_KEYBOARD_NAME
-	default "ksplit2"
+	default "ksplit"
 
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_KSPLIT2_RIGHT
+if SHIELD_KSPLIT_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "ksplit2 Right"
+	default "ksplit Right"
 
 endif
 
-if SHIELD_KSPLIT2_LEFT || SHIELD_KSPLIT2_RIGHT
+if SHIELD_KSPLIT_LEFT || SHIELD_KSPLIT_RIGHT
 
 config ZMK_SPLIT
 	default y
