@@ -1,17 +1,23 @@
-if SHIELD_KSPLIT2D_LEFT
+if KSPLIT2_LEFT
 
-# Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "KSPLIT2"
+	default "ksplit2"
 
 config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+	default y
+
+endif
+
+if SHIELD_KSPLIT2_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "ksplit2 Right"
 
 endif
 
 if SHIELD_KSPLIT2_LEFT || SHIELD_KSPLIT2_RIGHT
 
 config ZMK_SPLIT
-    default y
-
+	default y
+	
 endif
