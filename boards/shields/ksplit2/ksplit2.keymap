@@ -14,8 +14,8 @@
                 &kp TAB   &kp A     &kp S     &kp D     &kp F     &kp G       &kp H     &kp J     &kp K     &kp L     &kp B     &kp DEL
                           &kp Z     &kp X     &kp C     &kp V                           &kp M     &kp N     &kp COMMA &kp DOT
                                               &kp LALT                                            &kp LGUI
-                                        &kp LSHFT   &kp LCTRL                              &kp SPACE   &kp LR3
-                                        &kp LR1     &kp LR2                                &kp ENTER   &kp LR4
+                                        &kp LSHFT   &kp LCTRL                              &kp SPACE   &none
+                                        &none     &none                                &kp ENTER   &none
             >;
         };
     };
