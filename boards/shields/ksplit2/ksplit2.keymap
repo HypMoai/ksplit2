@@ -30,18 +30,18 @@ Test
             bindings = <
                 &kp ESC   &kp Q     &kp W     &kp E     &kp R     &kp T         &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
                 &kp TAB   &kp A     &kp S     &kp D     &kp F     &kp G         &kp H     &kp J     &kp K     &kp L     &kp B     &kp DEL
-                          &kp Z     &kp X     &kp C     &kp V                           &kp M     &kp N     &kp COMMA &kp DOT
+                          &kp Z     &kp X     &kp C     &kp V                             &kp M     &kp N     &kp COMMA &kp DOT
                                               &kp LALT                                            &kp LGUI
-                                        &kp LSHFT   &kp LCTRL                                 &kp SPACE   &kp CAPS
-                                        &mo NUM     &mo NAV                                   &mo 3       &mo 4
+                                        &kp LSHFT   &kp LCTRL                                 &kp SPACE   &kp ENTER
+                                        &mo NUM     &mo NAV                                   &none       &none
             >;
         };
 
         NUM { 
             bindings = <
-                &kp STAR  &kp KP_DOT &kp N7    &kp N8    &kp N9    &kp PLUS     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
-                &kp SLASH &kp N0     &kp N4    &kp N5    &kp N6    &kp MINUS    &kp H     &kp J     &kp K     &kp L     &kp B     &kp DEL
-                          &none      &kp N1    &kp N2    &kp N3                           &kp M     &kp N     &kp COMMA &kp DOT
+                &kp STAR  &kp KP_DOT &kp N7    &kp N8    &kp N9    &kp PLUS     &kp GRAVE &LBKT     &RBKT     &MINUS    &EQUAL    &kp BSPC
+                &kp SLASH &kp N0     &kp N4    &kp N5    &kp N6    &kp MINUS    &kp CAPS  &LPAR     &RPAR     &SEMI     &SQT      &kp DEL
+                          &kp ENTER  &kp N1    &kp N2    &kp N3                           &EXCL     &none     &FSLH     &NUBS
                                                &trans                                               &trans
                                          &trans   &trans                                        &trans   &trans
                                          &trans   &mo SYS                                       &trans   &trans
@@ -50,9 +50,9 @@ Test
 
          NAV { 
             bindings = <
-                &kp STAR  &kp KP_DOT &kp N7    &kp N8    &kp N9    &kp PG_UP     &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
-                &kp SLASH &kp N0     &kp LEFT  &kp UP    &kp RIGHT &kp PG_DN     &kp H     &kp J     &kp K     &kp L     &kp B     &kp DEL
-                          &none      &kp HOME  &kp DOWN  &kp END                           &kp M     &kp N     &kp COMMA &kp DOT
+                &kp BSPC  &none      &none     &none     &none     &kp ENTER     &none     &none     &none     &none     &none     &kp BSPC
+                &kp DEL   &kp PG_UP  &kp LEFT  &kp UP    &kp RIGHT &kp PSCRN     &none     &none     &none     &none     &none     &kp DEL
+                          &kp PG_DN  &kp HOME  &kp DOWN  &kp END                           &none     &none     &none     &none
                                                &trans                                               &trans
                                           &trans   &trans                                       &trans   &trans
                                           &mo SYS  &trans                                       &trans   &trans
@@ -61,12 +61,12 @@ Test
 
          SYS { 
             bindings = <
-                &kp STAR  &kp KP_DOT &kp N7      &kp N8        &kp N9    &kp PG_UP        &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
-                &kp SLASH &kp N0     &kp C_PREV  &kp C_VOL_UP  &kp C_NEXT &kp PG_DN     &kp H     &kp J     &kp K     &kp L     &kp B     &kp DEL
-                          &none      &kp C_MUTE  &kp C_VOL_DN  &kp C_PP                           &kp M     &kp N     &kp COMMA &kp DOT
+                &&t BT_CLR &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1  &bt BT_SEL 0  &none           &none     &none     &none     &none     &none     &kp BSPC
+                &none      &none        &kp C_MUTE   &kp C_VOL_UP  &kp C_PP      &none           &none     &none     &none     &none     &none     &kp DEL
+                           &none        &kp C_PREV   &kp C_VOL_DN  &kp C_NEXT                              &none     &none     &none     &none
                                                &trans                                                    &trans
                                           &trans   &trans                                            &trans   &trans
-                                          &mo SYS  &trans                                            &trans   &trans
+                                          &trans  &trans                                             &trans   &trans
             >; 
         };
     };
