@@ -39,9 +39,9 @@ Test
 
         NUM { 
             bindings = <
-                &kp STAR  &kp KP_DOT &kp N7    &kp N8    &kp N9    &kp PLUS     &kp GRAVE &LBKT     &RBKT     &MINUS    &EQUAL    &kp BSPC
-                &kp SLASH &kp N0     &kp N4    &kp N5    &kp N6    &kp MINUS    &kp CAPS  &LPAR     &RPAR     &SEMI     &SQT      &kp DEL
-                          &kp ENTER  &kp N1    &kp N2    &kp N3                           &EXCL     &none     &FSLH     &NUBS
+                &kp STAR  &kp KP_DOT &kp N7    &kp N8    &kp N9    &kp PLUS     &kp GRAVE &kp LBKT     &kp RBKT     &kp MINUS    &kp EQUAL    &kp BSPC
+                &kp SLASH &kp N0     &kp N4    &kp N5    &kp N6    &kp MINUS    &kp CAPS  &kp LPAR     &kp RPAR     &kp SEMI     &kp SQT      &kp DEL
+                          &kp ENTER  &kp N1    &kp N2    &kp N3                           &kp EXCL     &none        &kp FSLH     &kp NUBS
                                                &trans                                               &trans
                                          &trans   &trans                                        &trans   &trans
                                          &trans   &mo SYS                                       &trans   &trans
